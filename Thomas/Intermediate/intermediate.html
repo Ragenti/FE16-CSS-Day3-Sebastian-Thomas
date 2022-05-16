@@ -16,8 +16,12 @@
 
         }
         .container{
+            margin: 2% 0% 0% 5%;
+            align-self: center;
+            width: 30%;
             border: 2px solid black;
             display: flex;
+            flex-direction: column;
             padding: 0 1% 0;
 
             
@@ -31,6 +35,35 @@
         .headlines>*{
             margin: 0;
         }
+        .column{
+            display: flex;
+            flex-direction: column;
+        }
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .single_end{
+            align-self: flex-end;
+        }
+        
+        .row>div{
+            display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            justify-content: flex-end;
+            width: 33.333333333333333%;
+        }
+        .calories>.row>div{
+            justify-content: flex-start;
+        }
+        .row>.first_column{
+            justify-content: flex-start;
+        }
+        
+
     </style>
     <title>Intermediate</title>
 </head>
@@ -39,47 +72,154 @@
         <div class="headlines">
             <h1>Nutrition Facts</h1>
             <h3>Serving Size 1 cup (50g)</h3>
-            <h3>Servimgs Per Container 10</h3>
+            <h3>Servings Per Container 10</h3>
         </div>
-        <hr class="postheadline">
-        <div class="amount">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="amount column">
+            <div class = "single_end">with 1/2</div>
+            <div class = "single_end">cup 1%</div>
+            <div class = "row">
+                <div class = "first_column">Amount Per Serving</div>
+                <div>Cereal</div>
+                <div>milk</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Calories</div>
+                <div>190</div>
+                <div>250</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Calories from Fat</div>
+                <div>35</div>
+                <div>45</div>
+            </div>
         </div>
-        <div class="energy">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="energy column">
+            <div class = "single_end">%Daily Value**</div>
+            <div class="row">
+                <div class = "first_column">Total Fat 4g*</div>
+                <div>6%</div>
+                <div>8%</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Saturated Fat 1.5g</div>
+                <div>8%</div>
+                <div>13%</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Trans Fat 0g</div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Cholesterol 0mg</div>
+                <div>0%</div>
+                <div>3%</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Sodium 190mg</div>
+                <div>8%</div>
+                <div>11%</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Total Carbohydrate 39g</div>
+                <div>13%</div>
+                <div>15%</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Dietary Fiber 6g</div>
+                <div>24%</div>
+                <div>24%</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Sugars 11g</div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Protein 4g</div>
+                <div></div>
+                <div></div>
+            </div>
         </div>
-        <div class="vitamins">
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class="vitamins column">
+            <div class="row">
+                <div class = "first_column">Vitamin A</div>
+                <div>0%</div>
+                <div>6%</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Vitamin C</div>
+                <div>0%</div>
+                <div>2%</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Calcium</div>
+                <div>2%</div>
+                <div>15%</div>
+            </div>
+            <div class="row">
+                <div class = "first_column">Iron</div>
+                <div>6%</div>
+                <div>6%</div>
+            </div>
         </div>
         <div class="text">
-
+            *Amount In Cereal. with 1/2 cup 1% milk contributes an additional 60 Calories (10 Calories from Fat). 1g Total Fatr (1g Saturated Fat), 10mg Cholesterol, 70 mg Sodium, 7g Total Carbohydrate (6 g Sugars), 5 g Protein. **Percent Daily Values are based on a 2000 calorie diet. Your daily values may be higher or lower depending on your calorie needs:
         </div>
-        <div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
-            <div></div>
+        <div class = "calories column">
+            <div class="row">
+                <div></div>
+                <div>Calories:</div>
+                <div>2,000</div>
+                <div>2,500</div>
+            </div>
+            <div class="row">
+                <div>Total Fat</div>
+                <div>Less than</div>
+                <div>65g</div>
+                <div>80g</div>
+            </div>
+            <div class="row">
+                <div>Saturated Fat</div>
+                <div>Less than</div>
+                <div>20g</div>
+                <div>25g</div>
+            </div>
+            <div class="row">
+                <div>Cholesterol</div>
+                <div>Less than</div>
+                <div>300mg</div>
+                <div>300mg</div>
+            </div>
+            <div class="row">
+                <div>Sodium</div>
+                <div>Less than</div>
+                <div>2,400mg</div>
+                <div>2,400mg</div>
+            </div>
+            <div class="row">
+                <div>Total Carbohydrate</div>
+                <div></div>
+                <div>300g</div>
+                <div>375g</div>
+            </div>
+            <div class="row">
+                <div>Dietary Fiber</div>
+                <div></div>
+                <div>25g</div>
+                <div>30g</div>
+            </div>
+            <div class="row">
+                <div>Calories per gram</div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="row">
+                <div>Fat 9</div>
+                <div>Carbohydrate 4</div>
+                <div>Protein 4</div>
+            </div>
         </div>
     </div>
 </body>
